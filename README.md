@@ -11,7 +11,7 @@
 
 ```
 
-npm i -g brew-coffee
+  npm i -g brew-coffee
 
 ```
 
@@ -19,21 +19,20 @@ npm i -g brew-coffee
 
 <h4 align="left">Create a new file (<code>test.coffee</code>)</h4>
 
-
 <h4 align="left">Edit the file with a text editor.
 
 ```
 
-brew message = "Hello!"
-serve(message)
+  brew message = "Hello!"
+  serve(message)
 
-brew coffeeDone = true
+  brew coffeeDone = true
 
-sip (coffeeDone) {
-  serve("Coffee is ready!")
-} pour {
-  serve("Failed to get coffee.")
-}
+  sip (coffeeDone) {
+    serve("Coffee is ready!")
+  } pour {
+    serve("Failed to get coffee.")
+  }
 
 ```
 
@@ -41,7 +40,7 @@ sip (coffeeDone) {
 
 ```
 
-coffee-run example.coffee
+  coffee example.coffee
 
 ```
 
@@ -49,24 +48,10 @@ coffee-run example.coffee
 
 ```
 
-Hello!
-Coffee is ready!
+  Hello!
+  Coffee is ready!
 
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <h2 align="center">Documentation</h2>
 
@@ -75,7 +60,7 @@ Coffee is ready!
 
 ```
 
-brew text = "Hello!"
+  brew text = "Hello!"
 
 ```
 
@@ -84,13 +69,13 @@ brew text = "Hello!"
 
 ```
 
-brew n1 = 12
-brew n2 = 16.64
-brew str = "Text here"
-brew str = 'Here too'
-brew bool1 = true
-brew bool2 = false
-brew null = air
+  brew n1 = 12
+  brew n2 = 16.64
+  brew str = "Text here"
+  brew str = 'Here too'
+  brew bool1 = true
+  brew bool2 = false
+  brew null = air
 
 ```
 
@@ -99,51 +84,59 @@ brew null = air
 
 ```
 
-serve("Hi!")
+  serve("Hi!")
 
 ```
 
 <h3 align="center">Conditionals</h3>
-<p align="center">Coffee supports if-else-if ladder construct , <code>sip</code> is <b>if</b> block, <code>hold</code> is <b>else if</b> block, and the <code>pour</code> is the <b>else</b> block. </p>
+<p align="center">Coffee supports if-else-if ladder construct , <code>sip</code> is <b>if</b> block, <code>drip</code> is <b>else if</b> block, and the <code>pour</code> is the <b>else</b> block. </p>
 
 ```
 
-brew coffee = 10
+  brew coffee = 10
 
-sip (coffee < 10) {
-  serve("If")
-} hold (coffee > 10) {
-  serve("Else If")
-} pour {
-  serve("Else")
-}
+  sip (coffee < 10) {
+    serve("If")
+  } drip (coffee > 10) {
+    serve("Else If")
+  } pour {
+    serve("Else")
+  }
 
 ```
 
 <h3 align="center">Loops</h3>
 <p align="center"><code>stir</code> is <b>while</b> loop.</p>
 
+```
+
+  brew i = 0
+
+  stir (i < 10) {
+    serve("Coffee")
+    i++
+  }
 
 ```
 
-brew i = 0
-
-stir (i < 10) {
-  serve("Coffee")
-  i++
-}
-
-```
 <h3 align="center">Functions</h3>
 <p align="center"><code>roast</code> is for <b>function</b>.</p>
 
+```
+
+  roast coffee() {
+    serve("Hello!")
+  }
+
+  coffee()
 
 ```
 
-roast coffee() {
-  serve("Hello!")
-}
+<h3 align="center">Execution</h3>
+<p align="center">After installing Coffee with npm, use <code>coffee &lt;FILE_NAME&gt;</code> in the terminal to execute the coffee code.</p>
 
-coffee()
+```
+
+  coffee example.coffee
 
 ```
