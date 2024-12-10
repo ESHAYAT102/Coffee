@@ -3,7 +3,7 @@
 <a href="https://coffee.eshayat.com"><img alt="website" src="https://img.shields.io/badge/website-blue"/></a>
 <a href="https://www.npmjs.com/package/brew-coffee"><img alt="npm" src="https://img.shields.io/badge/npm-coffee-orange"/></a>
 </p>
-<h4 align="center">A coffee-themed programming language</h4>
+<h4 align="center">A coffee-themed scripting language</h4>
 
 <br />
 
