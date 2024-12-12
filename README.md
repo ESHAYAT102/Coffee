@@ -11,7 +11,7 @@
 
 ```
 
-  npm i -g brew-coffee
+  npm i -g '@eshayat./coffee'
 
 ```
 
